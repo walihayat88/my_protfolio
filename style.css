@@ -1,0 +1,846 @@
+body{
+  background-color: black;
+}
+#header{
+  /* position: fixed; */
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  /* background-color:; */
+  position: fixed;
+  z-index: 1;
+  background-color: black;
+}
+
+#logo{
+  font-weight: 600;
+  font-size: 40px;
+  margin-right: auto;
+  color: white;
+}
+
+#nav >a{
+  position: relative;
+  font-size: 20px;
+  font-weight: bolder;
+  margin-right: 20px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: aliceblue;
+  transition-duration: 1s;
+  position: relative;
+}
+
+#nav >a::after{
+  content: "";
+  left: 0;
+  bottom: 0;
+  position: absolute;
+  width: 0%;
+  height: 3px;
+  background-color: orange;
+  transition: 0.7s;
+
+}
+
+#nav >a:hover:after{
+  transition: 0.6s;
+  width: 100%;
+}
+
+
+#main{
+  margin-top: 50px;
+  margin-left: 100px;
+  color: aliceblue;
+
+}
+span{
+  color: orange;
+}
+
+#Hello>h2{
+     position: relative;
+     animation-name: hayat;
+     animation-duration: 3s;
+     padding-bottom: 100px;
+     animation-fill-mode: forwards;
+     text-shadow: 0px 0px 5ox orange;
+
+}
+@keyframes hayat {
+  0%{
+    opacity: 0;
+    top: 0px;
+  }
+  100%{
+    opacity: 1;
+    top: 100px;
+  }
+}
+
+
+#wali{
+  font-size: 60px;
+  position: relative;
+  animation-name: khan;
+  animation-duration: 3s;
+  margin-left: -100px;
+  animation-fill-mode: forwards;
+}
+
+@keyframes khan {
+  0%{
+    opacity: 0;
+    left: 0px;
+  }
+  100%{
+    opacity: 1;
+    left: 100px;
+  }
+}
+#hayat{
+  font-size: 60px;
+  padding-left: 100px;
+  position: relative;
+  animation-name: h1;
+  animation-duration: 3s;
+  margin-left: 100px;
+  animation-fill-mode: forwards;
+}
+
+@keyframes h1 {
+  0%{
+    opacity: 0;
+    right: 0px;
+  }
+  100%{
+    opacity: 1;
+    right: 100px;
+  }
+}
+
+#Hello>h3{
+  font-size: 32px;
+  padding-top: 100px;
+  position: relative;
+  animation-name: khattak;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes khattak {
+    0%{
+      opacity: 0;
+      bottom: 0px;
+    }
+    100%{
+      opacity: 1;
+      bottom: 100px;
+    }
+}
+
+#Hello>p{
+  position: relative;
+  padding-top: 30px;
+  animation-name: p;
+  animation-duration: 3s;
+  /* padding-bottom: 100px; */
+  animation-fill-mode: forwards;
+}
+@keyframes p {
+  0%{
+    bottom: 0px;
+    opacity: 0;
+  }
+  100%{
+    bottom: 100px;
+    opacity: 1;
+  }
+}
+
+
+
+
+
+
+#redshirt>img{
+  margin-top: 40px;
+  width: 420px;
+  height: 500px;
+}
+
+#redshirt{
+ float: right;
+ margin-top: 100px;
+ padding-right: 100px;
+ position: relative;
+ animation-name: wali;
+ animation-duration: 1.5s;
+ animation-fill-mode: forwards;
+ animation-timing-function:linear;
+ filter: drop-shadow(0px 0px 50px
+ rgba(255, 111, 0, 0.5));
+
+}
+
+@keyframes wali {
+   0%{
+   opacity: 0;
+    bottom: 0px;
+   }
+   100%{
+   opacity: 1;
+    bottom: 50px;
+   }
+}
+
+
+#name{
+  display: inline;
+  display: flex;
+}
+
+
+#contact>a>img{
+  background-color: rgb(255, 166, 0);
+  border-radius: 25px;
+}
+
+
+#gol{
+  border: whitesmoke;
+  width: 50px;
+  height: 50px;
+  border-radius: 30px;
+  /* box-shadow: 0px 10px 10px white; */
+  background-color: aliceblue;
+  transition-duration: 0.5s;
+}
+#gol:hover{
+  background-color: orange;
+  scale: 1.1;
+}
+
+
+#gol>a>img{
+  height: 30px;
+  width: 30px;
+  margin: 10px;
+  /* display: block; */
+ /* margin-top: 20px; */
+}
+
+#icon{
+  display: inline;
+  display: flex;
+  gap: 10px;
+
+}
+#gol{
+  border: whitesmoke;
+  width: 50px;
+  height: 50px;
+  border-radius: 30px;
+  /* box-shadow: 0px 10px 10px white; */
+  background-color: aliceblue;
+  position: relative;
+  transition-duration: 1s;
+  animation-name: gol;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+}
+@keyframes gol {
+  0%{
+    bottom: 0px;
+    opacity: 0;
+  }
+  100%{
+    bottom: 100px;
+    opacity: 1;
+  }
+}
+
+#gol{
+  box-shadow: 0px 0px 10px orange,
+  0px 0px 10px orange;
+}
+
+#gol>a>:hover{
+  position: relative;
+  animation-duration: 1s;
+  animation-name: rot;
+
+}
+
+@keyframes rot {
+  0%{
+    rotate: 0deg;
+
+  }
+  100%{
+    rotate: 360deg;
+  }
+}
+
+
+#download{
+  background-color: whitesmoke;
+  border: 1px solid orange;
+  width: 150px;
+  height: 50px; 
+  box-shadow: 0px 0px 10px orange,
+  0px 0px 10px orange;
+  border-radius: 10px;
+  text-align: center;
+  padding-top: 10px;
+  margin-top: -70px;
+  transition-duration: 1s;
+}
+
+
+#download:hover{
+  background-color: orange;
+  -webkit-box-reflect: below
+  1px linear-gradient(transparent,orange);
+  animation-duration: 1s;
+  box-shadow: 0 0 5px orange ,0 0 15px orange,0 0 25px orange,0 0 100px orange;
+}
+
+#download{
+  margin-top: 30px;
+  position: relative;
+  animation-name: gol;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes gol {
+  0%{
+    bottom: 0px;
+    opacity: 0;
+  }
+  100%{
+    bottom: 100px;
+    opacity: 1;
+  }
+}
+
+
+
+#download>a{
+  text-decoration: none;
+  font-size: 20px;
+  margin: auto;
+  
+  color: black;
+  font-weight: bolder;
+
+}
+
+
+
+
+#fro{
+  height: 100px;
+  width: 100px;
+  border-radius: 10px;
+  border: 1px solid orange;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+#iam{
+  border: 2px solid orange;
+  width: 200px;
+  background-color: black;
+  height: 100px;
+  color: white;
+  margin-top: -50px;
+  border-radius: 10px;
+  float: right;
+  margin-right: 600px;
+  margin-top: -600px;
+  position: relative;
+  animation-name: iam;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+  animation-timing-function:ease;
+  transition-duration: 1s;
+  
+}
+
+@keyframes iam {
+  0%{
+    opacity: 0;
+    top: 0px;
+    rotate: -360deg;
+  }
+  /* 25%{
+    opacity: 1;
+    top: 400px;
+    rotate: -360deg;
+  } */
+  50%{
+    opacity: 1;
+    top: 450px;
+    rotate: 0deg; 
+  }
+  100%{
+    opacity: 1;
+    top: 450px;
+    rotate: 0deg;
+  }
+  
+}
+
+#iam:hover{
+  box-shadow: 0 0 5px orange ,0 0 15px orange,0 0 25px orange,0 0 100px orange;
+  color: black;
+  background-color: orange;
+}
+#iam>h2{
+  /* width: auto; */
+padding-left: 20px;
+text-align: justify;
+padding-top: 3px;
+}
+
+#dev{
+  border: 2px solid orange;
+  width: 100px;
+  height: 50px;
+  margin-top: -50px;
+  border-radius: 10px;
+  float: right;
+  margin-right: 650px;
+  margin-top: -600px;
+  position: relative;
+  /* box-shadow: 0 0 5px orange ,0 0 15px orange,0 0 25px orange,0 0 100px orange; */
+  transition-duration: 1s;
+  color: white;
+  animation-name: dev;
+  animation-duration: 5s;
+  animation-fill-mode: forwards;
+  animation-timing-function:ease;
+  animation-delay: 1s;
+  opacity: 0;
+}
+
+#dev:hover{
+  box-shadow: 0 0 5px orange ,0 0 15px orange,0 0 25px orange,0 0 100px orange;
+  color: black;
+  background-color: orange;
+}
+#dev>h2{
+  padding-left: 10px;
+}
+
+@keyframes dev {
+  0%{
+    opacity: 0;
+    top: 0px;
+    rotate: -360deg;
+  }
+  /* 25%{
+    opacity: 1;
+    top: 400px;
+    rotate: -360deg;
+  } */
+  50%{
+    opacity: 1;
+    top: 400px;
+    rotate: 0deg; 
+  }
+  100%{
+    opacity: 1;
+    top: 400px;
+    rotate: 0deg;
+  }
+}
+
+#About{
+  margin-top: 100px;
+}
+
+#About>h1{
+  color: aliceblue;
+  text-align: center;
+  padding-bottom: 50px;
+  text-shadow: 0px 0px 10px orange;
+}
+
+#ser{
+  position: relative;
+  width: 300px;
+  height: 300px;
+  background-color: black;
+  border-radius: 50%;
+  overflow: hidden;
+  margin: auto;
+}
+
+#ser::before
+{
+  content: '';
+  position: absolute;
+  inset: -10px 100px;
+  background: linear-gradient(315deg,rgb(17, 0, 255),orange);
+  transition: 0.5s;
+  animation: animate 4s linear infinite;
+}
+#ser:hover::before{
+   inset: -20px 0px;
+
+}
+
+@keyframes animate {
+ 0%{
+  transform: rotate(0deg);
+ }
+ 100%{
+  transform: rotate(360deg);
+ }
+}
+
+
+#ser::after{
+  position: absolute;
+  content: '';
+  inset: 6px;
+  background: black;
+  border-radius: 50%;
+  z-index: 1;                
+}
+
+
+
+#img{
+  position: absolute;
+  inset: 30px;
+  border: 1px solid orange;
+  z-index: 3;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+#img>img{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.mee>h1{
+  color: aliceblue;
+  /* text-align: center justify; */
+  display: block;
+  text-align: center;
+  padding: 0px 100px 0px 100px;
+  margin-top: 40px;
+  position: relative;
+  animation-name: mee;
+  animation-duration: 2s;
+  padding-top: 100px;
+  animation-fill-mode: forwards
+
+}
+@keyframes mee {
+  0%{
+    bottom: 0px;
+    opacity: 0;
+  }
+  100%{
+    bottom: 100px;
+    opacity: 1;
+  }
+}
+
+
+
+
+
+
+
+
+.mee>p{
+  color: aliceblue;
+  /* text-align: center justify; */
+  display: block;
+  text-align: center;
+  padding: 0px 100px 0px 100px;
+  margin-top: 40px;
+  position: relative;
+  animation-name: mee;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+  animation-delay: 1s;
+  opacity: 0;
+}
+
+#About>h1{
+  position: relative;
+  animation-name: aboutme;
+  animation-duration: 5s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: infinite;
+  margin-top: -30px;
+
+}
+
+
+
+@keyframes aboutme {
+  0%{
+    top: 40px;
+    opacity: 1;
+  }
+  20%{
+    top: 50px;
+    opacity:1;
+  }
+  40%{
+    top: 40px;
+    opacity: 1;
+  }
+  60%{
+    top: 50px;
+    opacity: 1;
+  }
+  80%{
+    top:40px ;
+    opacity: 1;
+  }
+
+  100%{
+    top: 40px;
+    opacity: 1;
+  }
+  
+
+}
+
+section{
+  color: aliceblue;
+}
+
+
+#main-text{
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+
+}
+#main-text>h2{
+ font-size: 50px;
+}
+
+
+  
+.skil-main{
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); 
+  grid-row-gap: 30px;
+  grid-column-gap: 50px;
+  
+}
+
+.skil-main>span{
+  text-transform: lowercase;
+}
+
+.skil-left{
+  padding-left: 50px;
+}
+
+.skil-left .skil-bar  .info{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 10px;
+  
+}
+.skil-bar {
+  margin-bottom: 2.3rem
+}
+.bar{
+  margin-top: 20px;
+}
+
+
+.skil-main h3{
+  margin-bottom: 3rem;
+  text-align: center;
+}
+
+.skil-left .skil-bar .bar{
+  width: 100%;
+  height: 10px;
+  background-color:whitesmoke;
+  border-radius: 25px;
+  margin-top: 10px;
+  position: relative;
+}
+
+.skil-bar .bar span{
+  width: 50%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  background: orange;
+  border-radius: 25px;
+  /* box-shadow: 0 0 5px orange ,0 0 5px orange,0 0 5px orange; */
+
+}
+
+.skil-bar .bar .html{
+  width: 82%;
+  animation: html 2s;
+}
+
+@keyframes html {
+  0%{
+    width: 0px;
+  }
+  100%{
+    width: 82%;
+  }
+}
+
+
+.skil-bar .bar .css{
+  width: 72%;
+  animation: css 3s;
+}
+@keyframes css {
+  0%{
+    width: 0px;
+  }
+  100%{
+    width: 72%;
+  }
+}
+
+.skil-bar .bar .javascript{
+  width: 65%;
+  animation: java 4s;
+}
+@keyframes java {
+  0%{
+    width: 0px;
+  }
+  100%{
+    width: 62%;
+  }
+}
+
+.skil-bar .bar .amazon{
+  width: 95%;
+  animation: amazon 5s;
+}
+@keyframes amazon {
+  0%{
+    width: 0px;
+  }
+  100%{
+    width: 95%;
+  }
+}
+
+
+.text{
+  display: inline;
+  display: flex;
+  gap: 10px;
+}
+
+.text>p{
+  padding-top: 5px;
+  margin: auto;
+}
+
+
+.professional{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding-right: 50px;
+}
+
+.box .text h3{
+  font: 400;
+  letter-spacing: 1px;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transorm: translate(-50% , -50%);
+}
+
+
+.box .text{
+  text-align: center;
+  color: orange;
+  font-size: 1rem;
+  
+}
+.box{
+  position: relative;
+  margin: 10px 0;
+  flex: 1 1 15rem;
+}
+
+.circle{
+  height: 120px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid orange;
+}
+
+
+
+
+
+/* EDUCATION SECTION\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ */
+
+
+.education {
+  margin-top: 30px;
+}
+
+.education-entry {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.education-details {
+  flex: 1;
+}
+
+.education-details h4 {
+  margin: 0;
+  color: #333;
+}
+
+.education-details p {
+  margin: 5px 0;
+  color: #666;
+}
+
+.education-institution {
+  color: #3498db;
+}
